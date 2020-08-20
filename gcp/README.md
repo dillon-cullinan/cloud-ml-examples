@@ -121,14 +121,14 @@ Workflow: Install the required libraries, and authentication components for GCP,
                         ]
                     },
                     "jobDir": "gs://[YOUR PROJECT NAME]/training_output",
-                    "masterConfig": {
+                    "mainConfig": {
                         "imageUri": "gcr.io/[YOUR PROJECT NAME]/gcp_rapids_training:latest",
                         "acceleratorConfig": {
                             "count": "1",
                             "type": "NVIDIA_TESLA_T4"
                         }
                     },
-                    "masterType": "n1-standard-8",
+                    "mainType": "n1-standard-8",
                     "region": "us-west1",
                     "scaleTier": "CUSTOM"
                 }
